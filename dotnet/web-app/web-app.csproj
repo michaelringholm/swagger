@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>web_app</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Moq" Version="4.10.1" />
+    <PackageReference Include="NSwag.AspNetCore" Version="12.2.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\business-layer\business-layer.csproj" />
+    <ProjectReference Include="..\data-transport-layer\data-transport-layer.csproj" />
+  </ItemGroup>
+</Project>

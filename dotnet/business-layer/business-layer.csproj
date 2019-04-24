@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\data-transport-layer\data-transport-layer.csproj" />
+    <ProjectReference Include="..\data-layer\data-layer.csproj" />
+    <ProjectReference Include="..\service-layer\service-layer.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>business_layer</RootNamespace>
+  </PropertyGroup>
+
+</Project>
