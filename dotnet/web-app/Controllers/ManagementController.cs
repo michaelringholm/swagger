@@ -3,7 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace com.opusmagus
 {
-    public class ManagementController : Controller
+    [ApiController]
+    public class ManagementController
     {
         [HttpGetAttribute("/health")]        
         public dynamic Health() {
@@ -11,7 +12,7 @@ namespace com.opusmagus
         }
 
         [HttpGetAttribute("/time")]        
-        public dynamic Time() {
+        public ActionResult<dynamic> Time() {
             return DateTime.Now;
         }        
     }

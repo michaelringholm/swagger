@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/web-app/bin/Debug/netcoreapp2.2/web-app.dll",
+            "program": "${workspaceFolder}/web-api/bin/Debug/netcoreapp2.2/web-api.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/web-app",
+            "cwd": "${workspaceFolder}/web-api",
             "stopAtEntry": false,
             "launchBrowser": {
                 "enabled": true
